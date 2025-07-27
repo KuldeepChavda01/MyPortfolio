@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Kuldeep Chavda - My Projects</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar shadow-primary">
+      <input type="checkbox" id="checkbox" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="list-items">
+        <li class="list-item"><a href="./index.html">Home</a></li>
+        <li class="list-item"><a href="./about.html">About</a></li>
+        <li class="list-item"><a href="./myskills.html">Skills</a></li>
+        <li class="list-item"><a href="./projects.html">Projects</a></li>
+        <li class="list-item"><a href="./contact.html">Contact</a></li>
+      </ul>
+      <div class="logo">C.K.</div>
+    </nav>
+
+    <!-- Projects Section -->
+
+    <div class="projectsWrapper container">
+      <!-- Project 1: A J Construction -->
+      <div class="projectBox">
+        <div class="pImg">
+          <img src="./Images/home.png" />
+        </div>
+        <p class="projectDesc">
+          <strong>A J Construction</strong> - Designed and developed a showcase
+          website for a company, highlighting their services with emphasis on
+          quality, safety, and reliability.
+        </p>
+        <div class="projectTech">
+          <h3 class="techHeading">Technology: React</h3>
+          <div class="techBox">
+            <div class="tech">
+              <div class="progressCircle">
+                <div class="techProgress">
+                  <p data-id="5"></p>
+                </div>
+              </div>
+              <p class="techName">HTML</p>
+            </div>
+            <div class="tech">
+              <div class="progressCircle">
+                <div class="techProgress">
+                  <p data-id="40"></p>
+                </div>
+              </div>
+              <p class="techName">CSS</p>
+            </div>
+            <div class="tech">
+              <div class="progressCircle">
+                <div class="techProgress">
+                  <p data-id="55"></p>
+                </div>
+              </div>
+              <p class="techName">JS</p>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://kuldeepchavda01.github.io/AJ_Construction/"
+          class="quicklink"
+          ><i class="fas fa-globe"></i>View Site</a
+        >
+      </div>
+
+      <!-- Project 2: TextUtils -->
+      <div class="projectBox">
+        <div class="pImg">
+          <img src="./Images/textutils.png" />
+        </div>
+        <p class="projectDesc">
+          <strong>TextUtils</strong> - A real time word counter and a character
+          counting utility which can be used to manipulate your text in the way
+          you want.
+        </p>
+
+        <div class="projectTech">
+          <h3 class="techHeading">Technology: React</h3>
+          <div class="techBox">
+            <div class="tech">
+              <div class="progressCircle">
+                <div class="techProgress">
+                  <p data-id="8"></p>
+                </div>
+              </div>
+              <p class="techName">HTML</p>
+            </div>
+            <div class="tech">
+              <div class="progressCircle">
+                <div class="techProgress">
+                  <p data-id="24"></p>
+                </div>
+              </div>
+              <p class="techName">CSS</p>
+            </div>
+            <div class="tech">
+              <div class="progressCircle">
+                <div class="techProgress">
+                  <p data-id="68"></p>
+                </div>
+              </div>
+              <p class="techName">JS</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://kuldeepchavda01.github.io/TextUtils/" class="quicklink"
+          ><i class="fas fa-globe"></i>View Site</a
+        >
+      </div>
+
+      <!-- Project 3: NotebookX -->
+      <div class="projectBox">
+        <div class="pImg">
+          <img src="./Images/notebookx.png" />
+        </div>
+        <p class="projectDesc">
+          <strong>NotebookX</strong> - Secure & user-friendly note-taking app
+          that allows users to create, edit, and manage personal notes with
+          ease, ensuring data privacy and security .
+        </p>
+        <div class="projectTech">
+          <h3 class="techHeading">Technology: MERN Stack</h3>
+          <div class="techBox">
+            <div class="tech">
+              <div class="progressCircle">
+                <div class="techProgress">
+                  <p data-id="2"></p>
+                </div>
+              </div>
+              <p class="techName">HTML</p>
+            </div>
+            <div class="tech">
+              <div class="progressCircle">
+                <div class="techProgress">
+                  <p data-id="18"></p>
+                </div>
+              </div>
+              <p class="techName">CSS</p>
+            </div>
+            <div class="tech">
+              <div class="progressCircle">
+                <div class="techProgress">
+                  <p data-id="80"></p>
+                </div>
+              </div>
+              <p class="techName">JS</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/KuldeepChavda01/NotebookX" class="quicklink"
+          ><i class="fab fa-github"></i>Explore Repository
+        </a>
+      </div>
+    </div>
+
+    <footer id="footer" class="fixed-footer">
+      <p>&copy;2025 Kuldeep Chavda, All rights reserved</p>
+    </footer>
+
+    <script>
+      const progressCircle = document.querySelectorAll(".progressCircle");
+
+      progressCircle.forEach((circle) => {
+        const textElement = circle.querySelector("p");
+
+        const targetValue = parseInt(textElement.dataset.id);
+
+        let currentValue = 0;
+
+        const updateProgress = () => {
+          if (currentValue <= targetValue) {
+            textElement.innerText = currentValue + "%";
+            circle.style.background = `conic-gradient(#a4f4f9 0% ${currentValue}%, #1b1b1b ${currentValue}% 100%)`;
+            currentValue++;
+            requestAnimationFrame(updateProgress);
+          }
+        };
+
+        setTimeout(() => {
+          updateProgress();
+        }, 1250);
+      });
+    </script>
+  </body>
+</html>
