@@ -1,31 +1,17 @@
-# Portfolio Website
+# Portfolio Website (Old Version)
 
-Personally designed and developed portfolio website built using **HTML**,**CSS** and **Javascript** to showcase my skills, experience, and projects.
+⚠️ This version of my portfolio is no longer maintained.
 
-## Features
+I've redesigned and rebuilt my portfolio using **React**, and it's now hosted on a new platform for a better experience.
 
-- Responsive design for mobile and desktop
-- Clean and modern UI
-- Smooth user experience
+👉 **Visit the new version here:** [View New Portfolio](https://kuldeep-chavda-portfolio.netlify.app/)
 
-## Pages
+---
 
-- **Home**
-- **About**
-- **Skills**
-- **Projects**
-- **Contact**
+This repository previously hosted a personal portfolio built with **HTML**, **CSS**, and **JavaScript**, featuring:
 
-## Technologies Used
+- Responsive layout
+- Clean UI
+- Pages: Home, About, Skills, Projects, Contact
 
-- HTML5
-- CSS3 (Flexbox)
-- Javascript
-
-## Live Demo
-
-[View Website](https://kuldeepchavda01.github.io/MyPortfolio/)
-
-## License
-
-This project is for personal showcase purposes only.
+The GitHub Pages version now shows a message directing visitors to the new portfolio.
